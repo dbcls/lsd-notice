@@ -195,8 +195,22 @@
       color: var(--paper);
     }
 
+    .url-link:hover .tld-new {
+      color: var(--paper);
+      background: transparent;
+    }
+
     .url-link:hover::before {
       border-color: rgba(245,240,232,0.3);
+    }
+    /* .jp 部分の強調 */
+    .tld-new {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 1.15em;
+      padding: 0 1px;
+      position: relative;
+      transition: color 0.3s ease;
     }
 
     .rule-bottom {
@@ -257,7 +271,7 @@
 
     <div class="rule-top"></div>
 
-    <h1>lsd-project.<b>org</b> からのライフサイエンス辞書サービス終了のお知らせ</h1>
+    <h1>lsd-project.<strong>org</strong> からのライフサイエンス辞書サービス終了のお知らせ</h1>
 
     <p class="body-text">
       本ドメインでのライフサイエンス辞書サービスは<br>
@@ -269,7 +283,7 @@
 
     <div class="url-section">
       <p class="url-label">新しいURL　NEW ADDRESS</p>
-      <a class="url-link" href="https://lsd-project.jp/">https://lsd-project.jp/</a>
+      <a class="url-link" href="https://lsd-project.jp/">https://lsd-project<span class="tld-new">.jp</span>/</a>
     </div>
 
     <div class="rule-bottom"></div>
